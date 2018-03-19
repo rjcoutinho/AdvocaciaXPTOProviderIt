@@ -1,0 +1,26 @@
+﻿@model  AdvocaciaXPTO.Properts.pptCliente
+
+@{
+    ViewBag.Title = "Problema 1 - Teste 1";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<table class="table" id="tblPessoas">
+    <thead>
+        <tr>
+            <th>
+                @Html.Label("Soma de Todos os Processos Ativos")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.Label("R$") @Html.DisplayFor(m => m.Processo.VlTotal)
+
+            </td>
+        </tr>
+    </tbody>
+</table>

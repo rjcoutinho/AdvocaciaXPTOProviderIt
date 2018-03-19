@@ -1,0 +1,29 @@
+﻿@model  List<AdvocaciaXPTO.Properts.pptCliente>
+
+@{
+    ViewBag.Title = "Problema 1 - Teste 4";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<table class="table" id="tblPessoas">
+    <thead>
+        <tr>
+            <th>
+                @Html.Label("Processos de Setembro de 2007")
+
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Processo.NrProcesso)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
